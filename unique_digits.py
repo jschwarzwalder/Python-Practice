@@ -10,6 +10,17 @@ def find_largest_unique_digits(array_of_integers):
 					max_int = num
 				
 		return max_int;
+		
+def find_largest_unique_digits_in_sorted_array(array_of_integers):
+	max_index = len(array_of_integers) - 1
+	if (is_unique_digits(array_of_integers[max_index])):
+		return array_of_integers[max_index]
+	else:
+		for index in range(max_index-1, -1, -1 ):
+			number = array_of_integers[index]
+			if(is_unique_digits(number)):
+				return number
+			
 	
 
 def is_unique_digits(int):
@@ -29,12 +40,18 @@ def is_unique_digits(int):
 			
 		digits.append(i)
 	return True	
-	
+
+
+print(find_largest_unique_digits_in_sorted_array([1,2,3,4,5,6,7,8,9])	)	
+print(find_largest_unique_digits_in_sorted_array([1,2,3,4,5,6,7,8,9,11])	)	
+print(find_largest_unique_digits_in_sorted_array([1,2,3,4,5,6,7,8,9,11,13])	)	
+print(find_largest_unique_digits_in_sorted_array([11,22,33,44,55,66,77,88,99])	)	
 	
 print(find_largest_unique_digits([1, 11, 33])	)
 print(find_largest_unique_digits([123456789, 13476567561, 567891234,123412344, 4567890123])	)
 print(find_largest_unique_digits([])	)
 print(find_largest_unique_digits([-1234, -98372, -382954, -5])	)
+print(find_largest_unique_digits([11,22,33,44,55,66,77,88,99])	)
 	
 #print(is_unique_digits(123456789))
 #print(is_unique_digits(11))	
