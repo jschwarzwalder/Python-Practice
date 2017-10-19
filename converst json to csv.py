@@ -1,11 +1,7 @@
 import json
 
-reviews = []
 with open('reviews.json') as json_data:
-	for line in json_data:
-		review = json.loads(line)
-		reviews.append(review['reviewText'])
-	
-	
-	print(type(reviews))
-	print(len(reviews))
+	for line in json_data
+	d = json.load(json_data)
+	print(type(d))
+	print(len(d))
