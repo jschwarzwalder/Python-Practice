@@ -22,8 +22,8 @@ new_hit = mturk.create_hit(
     AutoApprovalDelayInSeconds = 14400,
     Question = question,
 )
-print "A new HIT has been created. You can preview it here:"
-print "https://workersandbox.mturk.com/mturk/preview?groupId=" + new_hit['HIT']['HITGroupId']
+print("A new HIT has been created. You can preview it here:")
+print("https://workersandbox.mturk.com/mturk/preview?groupId=" + new_hit['HIT']['HITGroupId'])
 # Remember to modify the URL above when you're publishing
 # HITs to the live marketplace.
 # Use: https://worker.mturk.com/mturk/preview?groupId=
