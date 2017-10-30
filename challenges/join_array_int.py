@@ -36,6 +36,13 @@ def cmp_to_key(mycmp):
             return mycmp(self.obj, other.obj) != 0
     return K	
 		
+
+function([1, 2, 3, 4, 5, 6, 7,8, 9, 10])
+function([])
+function([0,0,0,0,0,0])
 function([2, 20, 4, 100])
 function([6, 60, 62, 66])
 function([9899, 9879, 98])
+function([1,20, 300, 4000, 50000])
+function([53, 2, 4, 9, 127])
+function([65, 360])
