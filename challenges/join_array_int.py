@@ -5,8 +5,11 @@
 # 65,535 is max 16 bit integer
 
 def function (int_array):
-	new_int_array = sorted(int_array, key = cmp_to_key(compare))
-	print(new_int_array)
+	print(int_array)
+	int_array.sort(key = cmp_to_key(compare))
+	joined_int = "".join(map(str, int_array))
+	print(joined_int)
+	print()
 	
 	
 def compare (a, b):
@@ -34,3 +37,5 @@ def cmp_to_key(mycmp):
     return K	
 		
 function([2, 20, 4, 100])
+function([6, 60, 62, 66])
+function([9899, 9879, 98])
