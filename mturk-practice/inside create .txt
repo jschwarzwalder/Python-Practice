@@ -1,0 +1,23 @@
+
+{ 
+  "Title": "Find First Line of Published work",
+
+  "Description": "Given the title and author, find the first sentence of the work of fiction",
+
+  "HITLayoutId": "3HZK8BDP1A67LT1LXM31W6RCS1CYZ3",
+
+  "HITLayoutParameters": {title: "The Cat in the Hat", "author: "Dr. Seuss"}
+
+  "Reward": ".05",
+
+  "AssignmentDurationInSeconds": 3600, # 1 hour
+
+  "LifetimeInSeconds": 604800, # 7 days
+
+  "Keywords": "website search, find text, lookup"
+
+  "MaxAssignments": 2,
+
+  "AutoApprovalDelayInSeconds": 259200, # 3 days
+
+ }
