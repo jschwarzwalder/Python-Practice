@@ -1,0 +1,67 @@
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<section class="container" id="WebsiteDataCollection"><!-- Instructions -->
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>&nbsp;Instructions</strong> <span class="collapse-text">(Click to expand)</span> </a>
+<div class="panel-body" id="instructionBody">
+<p>Title and Author have been provided.</p>
+
+<p>To complete this Hit you will need to:</p>
+
+<ol>
+	<li>&nbsp;Verify Title and Author are correct and enter the correct title and author into the form.<br />
+	<br />
+	If it is correct you can just copy and paste the provided information.&nbsp;<br />
+	&nbsp;</li>
+	<li>Look online or in a printed version of the book to find the opening sentence.<br />
+	<br />
+	Example: <u>Romeo and Juliet</u> by&nbsp;William Shakespeare​<br />
+	<br />
+	<em>Two households, both alike in dignity, In fair Verona, where we lay our scene, From ancient grudge break to new mutiny, Where civil blood makes civil hands unclean.</em><br />
+	<br />
+	Include everything up to the first period.&nbsp;</li>
+</ol>
+
+<h3><strong><span style="color:#FF0000;">NOTE:</span> You will be rejected if you give a summary instead of the exact text of the first line.</strong></h3>
+
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<!-- End Instructions --><!-- Layout -->
+
+<div class="row">
+<div class="col-xs-12 col-md-8 col-md-offset-2 image"><label>Title and Author:</label>
+
+<div class="well">${title}&nbsp;by ${author}</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-md-8 col-md-offset-2 fields">
+<div class="form-group fieldset"><label for="title">Title:</label> <input class="form-control" id="title" name="title" placeholder="e.g. ABC Inc." type="text" /></div>
+
+<div class="form-inline fieldset clearfix">
+<div><label for="author">Author:</label></div>
+
+<div class="form-group col-margin"><label class="sr-only" for="author">Author:</label> <input class="form-control" id="author" name="author" placeholder="e.g. Firstname Lastname" type="text" /></div>
+
+<div class="form-inline fieldset clearfix">
+<div><label for="firstLine">First Sentence&nbsp;of book: (<span style="color:#FF0000;">Exact text required</span>)</label></div>
+
+<div class="form-group col-margin"><label class="sr-only" for="firstLine">First Line:</label> <input class="form-control" id="firstLine" name="firstLine" placeholder="e.g. It was the worst of times." type="text" /></div>
+
+<div class="form-group col-margin">&nbsp;</div>
+
+<div class="form-group col-margin">
+<h3 style="color: rgb(51, 51, 51);"><strong><span style="color: rgb(255, 0, 0);">NOTE:</span>&nbsp;You will be rejected if you give a summary instead of the exact text of the first line.</strong></h3>
+</div>
+</div>
+</div>
+</div>
+<!-- End Layout --><!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries --></div>
+</section>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" />
+<style type="text/css">.form-inline select.form-control{ width: 100%; } input.form-control{ width: 100%; } #collapseTrigger{ color:#fff; display: block; text-decoration: none; } #submitButton{ white-space: normal; } .image{ margin-bottom: 15px; } .group-label{ display: block; } .radio-inline>label{ font-weight: normal; } .col-margin{ padding: 0 2px 0 0; margin-bottom: 5px; } .col-margin:last-child{ padding-right: 0; } .form-group, .form-group.col-margin{ width: 100%; margin-bottom: 5px; } .form-group.fieldset, .fieldset{ margin-bottom: 15px; } .hour-label{ margin-top: 5px; font-weight: normal; } /* CSS for breaking long words/urls */ .dont-break-out { overflow-wrap: break-word; word-wrap: break-word; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -ms-hyphens: auto; -moz-hyphens: auto; -webkit-hyphens: auto; hyphens: auto; }
+</style>
