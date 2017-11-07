@@ -18,12 +18,15 @@ new_hit = mturk.create_hit(
     Reward = '0.15',
     MaxAssignments = 1,
     LifetimeInSeconds = 172800,
+	RequesterAnnotation='Gummi bears cookie lollipop danish bear claw marzipan chocolate bar. Dragée danish halvah caramels. Tootsie roll toffee jelly beans bonbon topping fruitcake pudding. Chocolate muffin jujubes dragée marzipan pastry biscuit muffin chocolate bar. Jujubes cho',
     AssignmentDurationInSeconds = 600,
     AutoApprovalDelayInSeconds = 14400,
-    Question = question,
+    #Question = '<ExternalQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd"> <ExternalURL>https://s3.us-east-2.amazonaws.com/mturk-api-tst/index.html</ExternalURL><FrameHeight>700</FrameHeight></ExternalQuestion>'
+	Question = question
 )
 print("A new HIT has been created. You can preview it here:")
 print("https://workersandbox.mturk.com/mturk/preview?groupId=" + new_hit['HIT']['HITGroupId'])
+print("HITID: "+ new_hit['HIT']['HITId'])
 # Remember to modify the URL above when you're publishing
 # HITs to the live marketplace.
 # Use: https://worker.mturk.com/mturk/preview?groupId=
